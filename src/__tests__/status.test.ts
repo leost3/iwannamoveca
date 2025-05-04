@@ -3,7 +3,7 @@ import app from '../index';
 
 describe('Status  Check API', () => {
   it('should return 200 and health info', async () => {
-    const response = await request(app).get('/api/health');
+    const response = await request(app).get('/api/status');
 
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty('status', 'ok');
