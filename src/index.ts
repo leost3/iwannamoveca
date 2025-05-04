@@ -9,7 +9,7 @@ import { registerRoutes } from './routes';
 dotenv.config();
 
 // Initialize express app
-const app = express();
+export const app = express();
 const port = process.env.PORT || 3000;
 
 // Apply middlewares
@@ -29,7 +29,7 @@ registerRoutes(app)
 // Start server
 if (process.env.NODE_ENV !== 'test') {
   app.listen(port, () => {
-    console.log(`🚀 Server is running on port ${port}`);
+    console.log(`🚀🚀🚀🚀 Server is running on http://localhost:${port}/api/status`);
   }).on('error', (err: any) => {
     if (err.code === 'EADDRINUSE') {
       console.error(`Port ${port} is already in use. Please try a different port.`);
