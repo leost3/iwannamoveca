@@ -9,6 +9,7 @@ const client = new Client({
   host: process.env.POSTGRES_HOST || 'localhost',
   port: parseInt(process.env.POSTGRES_PORT || '5433'),
   database: process.env.POSTGRES_DB || 'postgres',
+  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
 })
 
 // Track connection state

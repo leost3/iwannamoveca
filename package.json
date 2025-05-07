@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run services:up && node dist/index.js",
+    "start": "node dist/index.js",
     "services:up": "docker compose -f src/infra/compose.yaml up -d",
     "services:down": "docker compose -f src/infra/compose.yaml down",
     "postinstall": "npm run build",
