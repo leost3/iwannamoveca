@@ -16,4 +16,13 @@ export class MigrationsController {
       res.status(500).json({ status: 'error', message: 'Migrations  check failed' });
     }
   };
+
+  postMigrations = async (req: Request, res: Response): Promise<void> => {
+    try {
+      const migrations = await this.migrationsService.postMigrations();
+      res.status(200).json(migrations);
+    } catch (error) {
+      res.status(500).json({ status: 'error', message: 'Migrations  check failed' });
+    }
+  };
 }

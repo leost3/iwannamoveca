@@ -12,7 +12,8 @@
     "dev": "npm run services:up && nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "migrate": "node-pg-migrate"
+    "migration:create": "node-pg-migrate create -m src/infra/migrations",
+    "migration:up": "node-pg-migrate up -m src/infra/migrations --envPath .env.local"
   },
   "engines": {
     "node": ">=18.0.0"
