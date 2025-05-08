@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../index';
+import app from '../../index';
 
 describe('Status  Check API', () => {
   it('should return 200 and health info', async () => {

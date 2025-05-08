@@ -1,5 +1,5 @@
-import * as database from "../infra/database";
-import { StatusInfo } from "../types/status";
+import * as database from "../../infra/database";
+import { StatusInfo } from "../../types/status";
 
 export class StatusService {
   async getStatusInfo(): Promise<StatusInfo> {

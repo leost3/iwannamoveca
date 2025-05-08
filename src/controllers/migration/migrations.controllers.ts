@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { MigrationsService } from '../services/migrations.service';
+import { MigrationsService } from '../../services/migrations/get.migrations';
 
 export class MigrationsController {
   private migrationsService: MigrationsService;

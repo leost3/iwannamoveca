@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { StatusService } from '../services/status.service';
+import { StatusService } from '../../services/status/get.status';
 
 export class StatusController {
   private statusService: StatusService;

@@ -1,4 +1,4 @@
-import { StatusController } from '../controllers/status.controller';
+import { StatusController } from "../controllers/status/status.controller";
 
 const statusController = new StatusController();
 

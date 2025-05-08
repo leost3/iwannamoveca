@@ -1,7 +1,7 @@
 import request from 'supertest';
-import app from '../index';
+import app from '../../index';
 
-describe('Migrations API', () => {
+describe('get migrations API', () => {
   it('should return 200 for migrations', async () => {
     const response = await request(app).get('/api/migrations');
     expect(response.status).toBe(200);

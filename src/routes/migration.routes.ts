@@ -1,5 +1,5 @@
 import { Express } from 'express';
-import { MigrationsController } from '../controllers/migrations.controllers';
+import { MigrationsController } from '../controllers/migration/migrations.controllers';
 const migrationsController = new MigrationsController();
 
 export function migrationsRoutes(app: Express) {
